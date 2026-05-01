@@ -75,6 +75,7 @@
           {
             default = hmPkg;
             home-manager = hmPkg;
+            hermesix = pkgs.callPackage ./tools/managed-config/package.nix { };
 
             create-news-entry = pkgs.writeShellScriptBin "create-news-entry" ''
               ./modules/misc/news/create-news-entry.sh
